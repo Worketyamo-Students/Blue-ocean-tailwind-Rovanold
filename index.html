@@ -6,6 +6,87 @@
     <title>Document</title>
 </head>
 <body>
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jockey+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Blue ocean</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+            --font-family: "Inter";
+        }
+    </style>
+</head>
+
+<body class="overflow-x-hidden font-[Poppins]">
+    <header class="lg:hidden bg-[#7286D3] w-screen h-16 "></header>
+    <div class="lg:flex">
+        <div class="hidden lg:flex"><img src="./images/login-image.svg" alt=""></div>
+        <div>
+            <div class="flex flex-col mt-[8rem]">
+                <h1 class="font-[500] text-[32px] lg:text-[40px]">Connexion a Blue <br class="lg:hidden"> Ocean</h1>
+                <div class="flex justify-center items-center mt-[2rem]">
+                    <form action="traitement" method="post" class="flex flex-col gap-[2rem]">
+                        <div class="flex flex-col w-[325px] lg:w-[560px] gap-[1px] font-[300] text-[14px]">
+                            <label for="email" class="text-[14px] leading-8">Adresse Email</label>
+                            <div class="flex gap-[3rem] border-solid border-gray-400 border-1 h-[60px] w-full rounded-xl">
+                                <div class="w-[24px] hidden lg:flex"><img src="./images/mail.svg" alt="password-icon" class="ml-5"></div>
+                                <input class="hidden lg:flex" type="email" placeholder="abc@example.com">
+                            </div>
+                        </div>
     
+                        <div class="flex flex-col  w-[325px] lg:w-[560px] gap-[1px] font-[300] text-[14px]">
+                            <label for="psw" class="text-[14px] leading-8">Mot de passe</label>
+                            <div class="flex gap-[3rem] border-solid border-gray-400 border-1 h-[60px] w-full rounded-xl">
+                                <div class="w-[20px] hidden lg:flex"><img src="./images/psw.svg" alt="password-icon" class="ml-5"></div>
+                                <input class="hidden lg:flex" type="Motdepasse" placeholder="* * * * * *">
+                            </div>
+                        </div>
+                        <div class="flex justify-end lg:text-end">
+                            <span class="text-[#8EA7E9] underline w-2/4"><a href="">Mot de passe oublié?</a></span>
+                        </div>
+                        <div class="flex justify-center ">
+                            <button
+                                class="w-[200px] h-[50px] lg:w-[285px] lg:h-[70px] rounded-[10px] lg:rounded-[20px] bg-[#7286D3] font-medium text-[20px] font-700 text-white"
+                                type="button">Connexion</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="flex flex-col mb-[5rem]">
+                <div class="flex justify-evenly items-center p-[4rem]">
+                    <hr class="border-solid border-gray-400 w-[7rem] lg:w-[216px]">
+                    <p>
+                        ou avec
+                    </p>
+                    <hr class="border-solid border-gray-400 w-[7rem] lg:w-[216px]">
+                </div>
+    
+                <div class="flex justify-evenly gap-10">
+                    <div
+                        class="w-[80px] h-[80px] rounded-full border-[2px] border-[#D9D9D9] bg-[#FFF2F2] flex justify-center items-center">
+                        <img src="images/google.svg" alt="google logo">
+                    </div>
+                    <div
+                        class="w-[80px] h-[80px] rounded-full border-[2px] border-[#D9D9D9] bg-[#FFF2F2] flex justify-center items-center">
+                        <img src="images/facebook 1.svg" alt="facebook logo">
+                    </div>
+                    <div
+                        class="w-[80px] h-[80px] rounded-full border-[2px] border-[#D9D9D9] bg-[#FFF2F2] flex justify-center items-center">
+                        <img src="images/github.svg" alt="github logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
 </body>
 </html>
